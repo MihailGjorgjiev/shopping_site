@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Здрава Исхрана</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        nav.navbar {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+
+        .card img {
+            height: 250px;
+            margin: 5px;
+            
+        }
+
+        .row {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand">
+        <!-- <div class="container"> -->
+        <a href="index.html" class="navbar-brand mb-0 h1">
+            <img width="30" height="30"
+                src="https://www.graphicsprings.com/filestorage/stencils/56c6a0fe23aaf1279c73b9940b2fc873.svg" alt=""
+                class="d-inline-block align-top">
+            Здрава Исхрана
+        </a>
+        <button type="button" class="navbar-toggler float-end floa" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">
+                        Почетна
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="fitness.html" class="nav-link">
+                        Фитнес пакет
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Нарачај храна
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shakes.html" class="dropdown-item">Шејкови</a></li>
+                        <li><a href="food.html" class="dropdown-item">Готова храна</a></li>
+                        <li><a href="fruits.html" class="dropdown-item">Овошје</a></li>
+                        <li><a href="vegetables.html" class="dropdown-item">Зеленчук</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-info mx-2"><a class="text-light text-decoration-none" href="cart.html">Кошничка</a></button>
+        <button class="btn btn-primary"><a class="text-light text-decoration-none" href="signup.html">Најави
+                се</a></button>
+
+    </nav>
+    <div class="container pt-3">
+        <div class="text-center my-5">
+            <h1>Добредојдовте на нашата веб страница!</h1>
+            <hr>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mb-5 shadow-sm">
+                        <img src="img/muffins.png"
+                            alt="" class="img-fluid">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2>Најдобрите мафини со боровинки</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Фини и меки, овие се најдобрите мафини со боровикни. Овој рецепт е многу брз и лесен. Свежи или замрзнати боровинки делуваат одлично!
+                                </p>
+                            </div>
+                            <a href="" class="btn btn-outline-primary rounded-0 float-end">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mb-5 shadow-sm">
+                        <img src="img/cookies.png"
+                            alt="" class="img-fluid">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2>Чоколадни колачиња со овес и путер од кикирики</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Овие вегански колачиња со овес и путер од кикирики се неверојатни! Лесни се за правење (не е потребен миксер!), супер меки и многу вкусни!
+                                </p>
+                            </div>
+                            <a href="" class="btn btn-outline-primary rounded-0 float-end">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card mb-5 shadow-sm">
+                        <img src="img/chicken.png"
+                            alt="" class="img-fluid">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h2>Полнето пилешко со сладок компир</h2>
+                            </div>
+                            <div class="card-text">
+                                <p>
+                                    Со зеленчук, пилешко, сладок компир и едноставни зачини, овој оброк е неверојатен! Толку многу вкус!
+                                </p>
+                            </div>
+                            <a href="" class="btn btn-outline-primary rounded-0 float-end">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

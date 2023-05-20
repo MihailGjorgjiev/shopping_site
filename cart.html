@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Здрава Исхрана</title>
+    <style>
+        body {
+            height: 100vh;
+        }
+
+        nav.navbar {
+            padding-left: 2vw;
+            padding-right: 2vw;
+        }
+
+        .card img {
+            height: 250px;
+        }
+
+        .row {
+            transform: scale(0.9);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark fixed-top bg-dark navbar-expand">
+        <!-- <div class="container"> -->
+        <a href="index.html" class="navbar-brand mb-0 h1">
+            <img width="30" height="30"
+                src="https://www.graphicsprings.com/filestorage/stencils/56c6a0fe23aaf1279c73b9940b2fc873.svg" alt=""
+                class="d-inline-block align-top">
+            Здрава Исхрана
+        </a>
+        <button type="button" class="navbar-toggler float-end floa" data-bs-toggle="collapse"
+            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a href="index.html" class="nav-link">
+                        Почетна
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="fitness.html" class="nav-link">
+                        Фитнес пакет
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Нарачај храна
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="shakes.html" class="dropdown-item">Шејкови</a></li>
+                        <li><a href="food.html" class="dropdown-item">Готова храна</a></li>
+                        <li><a href="fruits.html" class="dropdown-item">Овошје</a></li>
+                        <li><a href="vegetables.html" class="dropdown-item">Зеленчук</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="btn btn-outline-info mx-2"><a class="text-light text-decoration-none"
+                href="cart.html">Кошничка</a></button>
+        <button class="btn btn-primary"><a class="text-light text-decoration-none" href="signup.html">Најави
+                се</a></button>
+
+    </nav>
+    <div class="container-fluid mt-5 pt-5">
+        <div class="card mx-auto shadow" style="width: 40rem;">
+            <div class="card-header">
+                <h3>Cart</h3>
+            </div>
+            <div class="card-body">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Продукт</th>
+                            <th>Цена</th>
+                            <th class="text-center">Количина</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-light">
+                        <tr>
+                            <td>1</td>
+                            <td>Јаболка</td>
+                            <td>
+                                <span class="price">30 ден.</span>
+                                <input type="hidden" name="txtPrice">
+                                <input type="hidden" name="totalTxtPrice">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash"></i>&nbsp;<input size="2" value="1" name="item">&nbsp;<i class="bi fa- bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Шејк со шумско овошје</td>
+                            <td>
+                                <span class="price">150 ден.</span>
+                                <input type="hidden" name="txtPrice"> 
+                                <input type="hidden" name="totalTxtPrice">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash"></i>&nbsp;<input size="2" value="2" name="item">&nbsp;<i class="bi fa- bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Инструктор: Мартина Мартинова</td>
+                            <td>
+                                <span class="price">350 ден.</span>
+                                <input type="hidden" name="txtPrice"> 
+                                <input type="hidden" name="totalTxtPrice">
+                            </td>
+                            <td class="text-center">
+                                <i class="bi bi-cart-dash"></i>&nbsp;<input size="2" value="1" name="item">&nbsp;<i class="bi fa- bi-cart-plus-fill text-primary"></i>
+                                <input type="hidden" name="txtItem">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="text-end">Вкупна цена:</td>
+                            <td><span class="totalAmount">530 ден.</span></td>
+                            <td>Вкупно: <span class="totalQuantity">4</span></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td></td>
+                            <td><a class="btn btn-primary float-end" href="payment.html">Плати</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+<script>
+    // var totalAmount=document.querySelector('.totalAmount');
+    // var amountByItem=document.querySelectorAll('input[name=txtPrice]');
+    // var totalItem=document.querySelector('.totalQuantity');
+    // var itemCountByEachProd=document.querySelectorAll('input[name=item]');
+
+    // document.querySelectorAll('.bi-cart-plus-fill').forEach(item=>{
+    //     item.addEventListener('click',function() {
+    //        addItemToCart(item); 
+    //     });
+    // });
+    // function addItemToCart(item){
+    //     var closestTr=item.closest("td").parentNode;
+    //     var closestPrice=closestTr.cells[2].querySelector('input[name=txtPrice]').value;
+    //     var closestTotalPrice=closestTr.cells[2].querySelector('input[name=totalTxtPrice]');
+
+    //     var itemCount=item.closest('td').querySelector('input[name=item]');
+
+    //     itemCount.value=parseFloat(itemCount.value)+1;
+    //     closestTotalPrice.value=parseFloat(closestPrice)*parseFloat(itemCount.value);
+
+    //     var tempTotalAmount=0;
+    //     amountByItem.forEach(i=>{
+    //         tempTotalAmount=tempTotalAmount+parseFloat(i.value);
+    //     });
+
+    //     totalAmount.innerHTML=tempTotalAmount;
+    // }
+</script>
+</body>
+
+</html>
